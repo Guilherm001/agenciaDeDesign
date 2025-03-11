@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "./page.module.css";
 import Topo from "./components/topo/index";
 import SecaoBanner from "./components/SecaoBanner/index"
+import SecaoExperienciaTrabalho from "./components/SecaoExperienciaTrabalho/index";
 
 
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
     <div>
       <Topo acao_click={mudarTema} />
       <SecaoBanner />
+      <SecaoExperienciaTrabalho />
     </div>
   );
 }
+// <div className={temaEscuro ? styles.escuro : styles.claro}>
+       // </div>
