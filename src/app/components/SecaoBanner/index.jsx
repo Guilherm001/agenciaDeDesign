@@ -1,12 +1,12 @@
 import Image from "next/image";
-
+import Banner from "/public/banner.jpg"
 
 
 export default function Secao_banner(){
     return(
         <div>
             <div>
-                <Image src="/banner.jpg" alt="Banner"/>
+                <Image src={Banner} alt="Banner"/>
             </div>
             <div>
                 <div>

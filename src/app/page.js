@@ -2,6 +2,8 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 import Topo from "./components/topo/index";
+import SecaoBanner from "./components/SecaoBanner/index"
+
 
 export default function Home() {
   // função para alterar o tema do projeto (escuro / claro)
@@ -15,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <Topo acao_click={mudarTema} />
-      <div></div>
+      <SecaoBanner />
     </div>
   );
 }
