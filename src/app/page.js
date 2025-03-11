@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Topo from "./components/topo/index";
 import SecaoBanner from "./components/SecaoBanner/index"
 import SecaoExperienciaTrabalho from "./components/SecaoExperienciaTrabalho/index";
+import Card from "./components/Card";
 
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
       <Topo acao_click={mudarTema} />
       <SecaoBanner />
       <SecaoExperienciaTrabalho />
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }
