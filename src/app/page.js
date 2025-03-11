@@ -5,6 +5,7 @@ import Topo from "./components/topo/index";
 import SecaoBanner from "./components/SecaoBanner/index"
 import SecaoExperienciaTrabalho from "./components/SecaoExperienciaTrabalho/index";
 import Card from "./components/Card";
+import Rodape from "./components/Rodape";
 
 
 export default function Home() {
@@ -27,6 +28,8 @@ export default function Home() {
       <Card />
       <Card />
       </div>
+
+      <Rodape />
     </div>
   );
 }
