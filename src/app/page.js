@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./page.module.css";
+import Styles from "./page.module.css";
 import Topo from "./components/topo/index";
 import SecaoBanner from "./components/SecaoBanner/index"
 import SecaoExperienciaTrabalho from "./components/SecaoExperienciaTrabalho/index";
@@ -21,9 +21,12 @@ export default function Home() {
       <Topo acao_click={mudarTema} />
       <SecaoBanner />
       <SecaoExperienciaTrabalho />
+
+      <div className={Styles.Card}>
       <Card />
       <Card />
       <Card />
+      </div>
     </div>
   );
 }
