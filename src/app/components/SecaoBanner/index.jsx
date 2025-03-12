@@ -1,15 +1,21 @@
 import Image from "next/image";
 import Banner from "/public/banner.jpg"
+import Style from "./secaoBanner.module.css"
 
 
 export default function Secao_banner(){
     return(
-        <div>
-            <div>
-                <Image src={Banner} alt="Banner"/>
+        <div className={Style.container_pai}>
+
+            <div className={Style.container_filho}>
+
+                <div className={Style.image}>
+                </div>
             </div>
-            <div>
-                <div>
+
+            <div className={Style.container_filho}>
+
+                <div className={Style.container_neto}>
                     <p>BRANDING / UI / UX / TECNOLOGIA</p>
 
                     <h1>Agencia de branding</h1>

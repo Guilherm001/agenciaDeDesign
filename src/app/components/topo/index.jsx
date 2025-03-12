@@ -14,14 +14,14 @@ export default function Topo (props){
 
             <div className={Style.container_filho}>
 
-            <Image src="/logo.png" alt="Descrição" width={20} height={20} />
+            <Image src="/logo.png" alt="Descrição" width={50} height={35} />
 
             </div>
 
-            <div>
+            <div className={Style.secao_botao}>
                 
                 <button onClick={props.acao_click}>
-                    <Image src="/moon.png" alt="icone" width={20} height={20} />
+                    <Image src="/moon.png" alt="icone" width={25} height={25} />
                 </button>
 
             </div>
