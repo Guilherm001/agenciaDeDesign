@@ -2,11 +2,9 @@
 import { useState } from "react";
 import Styles from "./page.module.css";
 import Topo from "./components/topo/index";
-import SecaoBanner from "./components/SecaoBanner/index"
+import SecaoBanner from "./components/SecaoBanner/index";
 import SecaoExperienciaTrabalho from "./components/SecaoExperienciaTrabalho/index";
-import Card from "./components/Card";
 import Rodape from "./components/Rodape";
-
 
 export default function Home() {
   // função para alterar o tema do projeto (escuro / claro)
@@ -23,15 +21,9 @@ export default function Home() {
       <SecaoBanner />
       <SecaoExperienciaTrabalho />
 
-      <div className={Styles.Card}>
-      <Card />
-      <Card />
-      <Card />
-      </div>
-
       <Rodape />
     </div>
   );
 }
 // <div className={temaEscuro ? styles.escuro : styles.claro}>
-       // </div>
+// </div>

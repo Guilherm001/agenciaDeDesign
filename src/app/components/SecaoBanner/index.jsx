@@ -18,7 +18,7 @@ export default function Secao_banner(){
                 <div className={Style.container_neto}>
                     <p>BRANDING / UI / UX / TECNOLOGIA</p>
 
-                    <h1>Agencia de branding</h1>
+                    <h2>Agencia de branding</h2>
 
                     <h1>
                         <span>
