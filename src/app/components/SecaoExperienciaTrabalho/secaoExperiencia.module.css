@@ -4,9 +4,7 @@
     display: grid;
     gap: 50px;
 }
-.Card{
-    display: flex;
-}
+
 .container_texto{
     width: 768px;
     margin: auto;
@@ -28,4 +26,10 @@
     height: 4px;
     background-color: #FFC107;
     margin: 5px auto; 
+}
+
+.Card{
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
 }
