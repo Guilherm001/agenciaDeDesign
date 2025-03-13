@@ -22,6 +22,7 @@ const Rodape = (props) => {
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Image src="/linkedin.png" alt="Descrição" width={45} height={45} /></a>
                 </div>
             </div>
+            <hr/>
             <div className={Style.final}>
                 <p>Copyright 2022 <span>Gulherme Rodrigues</span></p>
             </div>
