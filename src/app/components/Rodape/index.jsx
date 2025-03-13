@@ -1,24 +1,32 @@
 import React from 'react';
 import Image from 'next/image';
+import Style from './rodape.module.css'
 
 const Rodape = () => {
     return (
-        <footer style={{ textAlign: 'center', padding: '20px' }}>
-            <div>
-                <Image src="/path/to/your/image.jpg" alt="Description" layout="responsive" width={500} height={300} />
+        <footer >
+            <div className={Style.footer}>
+                <div className={Style.subcontainer}>
+                    <Image src="/logo.png" alt="Descrição" width={50} height={35} />
+                
+                    <p>Ajudamos a criar uma personalidade digital construindo sua marca no ambiente online utilizando estratégias,
+                    ferramentas e tecnologias personalizadas.</p>
+                </div>
+                <div className={Style.links}>
+                
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><Image src="/twitter.png" alt="Descrição" width={45} height={45} /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Image src="/facebook.png" alt="Descrição" width={45} height={45} /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Image src="/dribble.png" alt="Descrição" width={45} height={45} /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Image src="/behance.png" alt="Descrição" width={45} height={45} /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Image src="/google.png" alt="Descrição" width={45} height={45} /></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Image src="/linkedin.png" alt="Descrição" width={45} height={45} /></a>
+                </div>
             </div>
-            <div>
-                <p>Este é um parágrafo abaixo da imagem.</p>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
-            <div style={{ marginTop: '20px' }}>
-                <p>Autor do projeto: Seu Nome</p>
+            <div className={Style.final}>
+                <p>Copyright 2022 <span>Gulherme Rodrigues</span></p>
             </div>
         </footer>
+        
     );
 };
 
