@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div>
-      <Topo acao_click={mudarTema} />
+      <Topo acao_click={mudarTema} temaEscuro={temaEscuro} />
       <SecaoBanner />
       <SecaoExperienciaTrabalho />
 
