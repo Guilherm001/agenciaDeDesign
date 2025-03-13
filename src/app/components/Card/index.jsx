@@ -3,19 +3,22 @@ import Styles from './card.module.css';
 
 
 
-const Card = () => {
+const Card = (props) => {
     return (
+        <section className={props.temaEscuro ? Styles.escuro : Styles.claro}>
+            
         <div className={Styles.card}>
             <div className={Styles.card_header}>
-                <p>JUNHO 2012 - 2016</p>
-                <h2>Web Designer</h2>
-                <p>Pied Piper StartUp.</p>
+                <p>{props.Data}</p>
+                <h2>{props.Titulo}</h2>
+                <p>{props.Paragrafo}</p>
                 
             </div>
             <div className={Styles.card_body}>
-                <p>Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores</p>
+                <p>{props.Descricao}</p>
             </div>
         </div>
+        </section>
     );
 };
 

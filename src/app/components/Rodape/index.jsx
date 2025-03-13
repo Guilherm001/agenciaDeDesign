@@ -2,9 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import Style from './rodape.module.css'
 
-const Rodape = () => {
+const Rodape = (props) => {
     return (
-        <footer >
+        <footer className={props.temaEscuro ? Style.escuro : Style.claro}>
             <div className={Style.footer}>
                 <div className={Style.subcontainer}>
                     <Image src="/logo.png" alt="Descrição" width={50} height={35} />

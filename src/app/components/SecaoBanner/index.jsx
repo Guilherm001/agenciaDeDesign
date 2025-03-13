@@ -3,8 +3,10 @@ import Banner from "/public/banner.jpg"
 import Style from "./secaoBanner.module.css"
 
 
-export default function Secao_banner(){
+export default function SecaoBanner(props){
     return(
+        <section className={props.temaEscuro ? Style.escuro : Style.claro}>
+
         <div className={Style.container_pai}>
 
             <div className={Style.container_filho}>
@@ -28,5 +30,6 @@ export default function Secao_banner(){
                 </div>
             </div>
         </div>
+        </section>
     )
 }

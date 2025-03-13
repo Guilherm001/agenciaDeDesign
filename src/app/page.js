@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <div>
       <Topo acao_click={mudarTema} temaEscuro={temaEscuro} />
-      <SecaoBanner />
-      <SecaoExperienciaTrabalho />
+      <SecaoBanner temaEscuro={temaEscuro} />
+      <SecaoExperienciaTrabalho temaEscuro={temaEscuro}  />
 
-      <Rodape />
+      <Rodape temaEscuro={temaEscuro}  />
     </div>
   );
 }

@@ -30,3 +30,11 @@
 .container_neto span{
     font-size: 50px;
 }
+.escuro{
+    background-color: #000;
+    color: #fff;
+}
+.claro{
+    background-color: #fff;
+    color: #000;
+}
